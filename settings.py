@@ -1,9 +1,8 @@
 # TODO: add the root as a variable
+import os
 
-DATABASE_URL = "sqlite:///pavlov.db"
+ROOT = os.path.dirname(os.path.realpath(__file__))
 
-COOKIE_COST = 10
-EXERCISES = {
-    "Push-Up": { "name": "push-ups", "value": 40, "goal": 120 },
-    "Run": { "name": "meters of running", "value": 100, "goal": 2000 }
-}
+DATABASE_URL = "sqlite:///%s/pavlov.db" % ROOT
+
+COOKIE_COST = 20
