@@ -1,6 +1,6 @@
 # TODO: add the root as a variable
 
-DATABASE_URL = "sqlite://pavlov.db"
+DATABASE_URL = "sqlite:///pavlov.db"
 
 COOKIE_COST = 10
 EXERCISES = {

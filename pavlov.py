@@ -35,6 +35,7 @@ def main():
     # TODO: make the exercise menu a submenu
     #       dynamically created from config
     # TODO: save the state of things
+    # TODO: add more rewards than cookies
     # TODO: allow user to add exercises/other incentives
     # TODO: allow user to add rewards
     print("Welcome to the incentivizer.")
@@ -65,7 +66,3 @@ def main():
     except KeyboardInterrupt:
         pass
     print("Goodbye!")
-
-
-if __name__ == "__main__":
-    main()
