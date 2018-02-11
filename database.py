@@ -26,7 +26,7 @@ class Exercise(Base):
     value = Column(Integer)
     goal = Column(Integer)
 
-    exercise_sets = relationship("ExerciseSet", back_populates="exercise_sets",
+    exercise_sets = relationship("ExerciseSet", back_populates="exercise",
         cascade="all, delete, delete-orphan")
 
 
@@ -36,7 +36,7 @@ class ExerciseSet(Base):
     exercise_id = Column(Integer, ForeignKey("exercises.id"))
     reps = Column(Integer)
 
-    exercise = relationship("Exercise", back_populates="exercises")
+    exercise = relationship("Exercise", back_populates="exercise_sets")
 
 
 engine = create_engine(DATABASE_URL)
