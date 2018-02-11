@@ -8,6 +8,7 @@ A tool for counting how many push-ups you've done, and determining the reward.
 from numpy import cos, pi
 
 from .settings import COOKIE_COST, EXERCISES
+from .database import Session
 
 
 def ceil(n):
